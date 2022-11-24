@@ -51,11 +51,3 @@ main.o: main.c NumClass.h
 clean:
 	rm -f *.o *.a *.so mains maindloop maindrec
 
-run1: 
-	./mains
-
-run2: 
-	./maindloop
-
-run3: 
-	./maindrec
