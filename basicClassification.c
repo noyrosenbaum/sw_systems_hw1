@@ -15,22 +15,17 @@ int isPrime(int num)
     }
     return 1;
 }
-int factorial(int digit)
-{
-    if (digit == 0 || digit == 1)
-    {
-        return 1;
-    }
-    return (digit * factorial(digit - 1));
-}
+
 int isStrong(int num)
 {
+    const int factorial[] = {1,1,2,6,24,120,720,5040,40320,362880};
     int sum = 0;
-    while (num > 0)
+    int temp = num;
+    while (temp > 0)
     {
-        int digit = factorial(num % 10);
+        int digit = factorial[temp % 10];
         sum += digit;
-        num /= 10;
+        temp /= 10;
     }
     if (sum == num)
     {

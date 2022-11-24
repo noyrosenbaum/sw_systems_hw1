@@ -1,53 +1,47 @@
 #include "NumClass.h"
 
-int main()
-{
-    int a, b;
+int main() {
+    int a,b;
+    printf("Enter 2 numbers: ");
     scanf("%d%d", &a, &b);
     int i = a;
 
-    while (i <= b)
-    {
-        if (isPrime(i) == 1)
-        {
-            printf("%d ", i);
-        }
-        i++;
+printf("The Armstrong numbers are: ");
+    while(i<=b){
+        if (isPrime(i)==1){
+            printf("%d ",i);}
+            i++;
     }
     printf("\n");
     i = 0;
 
-    while (i <= b)
-    {
-        if (isArmstrong(i) == 1)
-        {
-            printf("%d ", i);
-        }
-        i++;
+
+printf("The Palindromes are: ");
+    while(i<=b){
+        if (isArmstrong(i)==1){
+            printf("%d ",i);}
+            i++;
     }
     printf("\n");
-    i = 0;
+    i=0;
 
-    while (i <= b)
-    {
-        if (isStrong(i) == 1)
-        {
-            printf("%d ", i);
-        }
-        i++;
+
+printf("The Prime numbers are: ");
+    while(i<=b){
+        if (isStrong(i)==1){
+            printf("%d ",i);}
+            i++;
     }
     printf("\n");
-    i = 0;
+    i=0;
 
-    while (i <= b)
-    {
-        if (isPalindrome(i) == 1)
-        {
-            printf("%d ", i);
-        }
-        i++;
+printf("The Strong numbers are: ");
+    while(i<=b){
+        if (isPalindrome(i)==1){
+            printf("%d ",i);}
+            i++;
     }
     printf("\n");
 
-    return 0;
+
 }
